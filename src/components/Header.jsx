@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 
 import escudo from '../assets/images/escudo.png';
-import slider1 from '../assets/images/slider-nivel-inicial.jpg';
+import Slider from "./Slider/Slider";
 
 const Header = () => {
     return (
@@ -13,47 +13,8 @@ const Header = () => {
                     <p className="topbar__subtitle">COLEGIO ALTERNATIVO PRUEBA</p>
                 </div>
             </div>
-            <div className="slider">
-                <div className="slider__container">
-                    <img src={slider1} alt="fondo" className="slider__img"/>
-                    <div className="slider__data">
-                        <h2 className="slider__title">Nivel Inicial</h2>
-                        <p className="slider__description">
-                            Hacia una escuela inclusiva, <br/>
-                            educando en valores
-                        </p>
-                    </div>
-                </div>
-                <div className="slider__nav">
-                    <div className="slider__item">
-                        <h2 className="slider__name">Nivel Inicial</h2>
-                        <p className="slider__paragraph">
-                            Educando en valores
-                        </p>
-                    </div>
 
-                    <div className="slider__item">
-                        <h2 className="slider__name">Nivel Primario</h2>
-                        <p className="slider__paragraph">
-                            Educando en valores
-                        </p>
-                    </div>
-
-                    <div className="slider__item">
-                        <h2 className="slider__name">Nivel Secundario</h2>
-                        <p className="slider__paragraph">
-                            Educando para pensar
-                        </p>
-                    </div>
-
-                    <div className="slider__item">
-                        <h2 className="slider__name">Nivel C.E.N.S</h2>
-                        <p className="slider__paragraph">
-                            Terminar los estudios secundarios
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <Slider />
 
             <Navbar />
 
